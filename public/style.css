@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 body {
@@ -169,4 +169,56 @@ th, td {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
+}
+
+/* Horizontal Stat Cards for Projects Page */
+.project-stats {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+.mini-card span {
+    font-size: 0.8rem;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Scrollable Table Area */
+.scroll-wrapper {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.main-project-table {
+    position: relative;
+    padding-bottom: 30px; /* Space for scrollbar */
+}
+
+/* Progress Bar Styling */
+.progress-container {
+    width: 100px;
+    height: 12px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #999;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--dark-purple);
+    width: 40%; /* Dynamic */
+}
+
+/* Calendar Button Styling */
+.btn-small-clear {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.8rem;
 }

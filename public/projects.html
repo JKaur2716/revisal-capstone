@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisal - Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo"><h2>REVISAL</h2></div>
+            <nav>
+                <ul>
+                    <li><i class='bx bxs-home'></i> Home</li>
+                    <li class="active"><i class='bx bxs-folder'></i> Project</li>
+                    <li><i class='bx bxs-calendar'></i> Calendar</li>
+                    <li class="dropdown">
+                        <span><i class='bx bxs-chat'></i> Communicate <span class="badge">3</span></span>
+                        <i class='bx bx-chevron-down'></i>
+                    </li>
+                    <li><i class='bx bxs-briefcase'></i> Services</li>
+                    <li><i class='bx bxs-bell'></i> Notifications</li>
+                    <li><i class='bx bxs-cog'></i> Settings</li>
+                    <li><i class='bx bxs-help-circle'></i> Help</li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar"></div>
+                <span>Sally Nguyen</span>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="welcome">
+                    <h1>Hello, Human</h1>
+                    <p>So ... which project are you gonna procrastinate today?</p>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </header>
+
+            <section class="stat-cards project-stats">
+                <div class="card mini-card"><span>All projects</span><h2>2</h2></div>
+                <div class="card mini-card"><span>Initiation (I)</span><h2>10</h2></div>
+                <div class="card mini-card"><span>Planning (P)</span><h2>4</h2></div>
+                <div class="card mini-card"><span>Execution (E)</span><h2>2</h2></div>
+                <div class="card mini-card"><span>Monitoring (M)</span><h2>10</h2></div>
+                <div class="card mini-card"><span>Closure (C)</span><h2>4</h2></div>
+            </section>
+
+            <section class="action-buttons">
+                <button class="btn-outline"><i class='bx bx-plus-circle'></i> Add Project</button>
+                <button class="btn-outline"><i class='bx bx-plus-circle'></i> Create Task</button>
+                <div style="flex-grow: 1; text-align: right;">
+                    <i class='bx bx-slider-alt' style="font-size: 1.5rem; cursor: pointer;"></i>
+                </div>
+            </section>
+
+            <div class="table-container main-project-table">
+                <div class="table-header"><h3>Projects</h3></div>
+                <div class="scroll-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <th>Project</th>
+                                <th>Client</th>
+                                <th>Stage</th>
+                                <th>Progress</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="projects-tbody">
+                            </tbody>
+                    </table>
+                </div>
+                <div class="custom-scrollbar-horizontal">
+                    <div class="scroll-thumb"></div>
+                </div>
+            </div>
+
+            <div class="table-container" style="margin-top: 2rem;">
+                <div class="table-header">
+                    <h3>Upcoming Important Date</h3>
+                    <button class="btn-small-clear">View Full Calendar</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Project</th>
+                            <th>Type</th>
+                            <th>Time</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dates-tbody"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="projects.js"></script>
+</body>
+</html>

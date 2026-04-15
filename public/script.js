@@ -35,3 +35,4 @@ function loadDashboard() {
 }
 
 window.onload = loadDashboard;
+
